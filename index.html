@@ -41,19 +41,25 @@
             <br>
             <br>
             <div class="main">
-            <button id="first">Buy a Property</button> <br>
+                <span class="drop">
+            <button id="first">Buy a Property</button>
+              <ul class="dropdown">
+               <p><li>Lands</li></p>
+               <p><li>Houses</li></p>
+              </ul>
+                </span> <br>
              <button id="second">Lease a Property</button> 
             </div>
              <ul class="nav">
-                <li id="second">Property Type</li>
                 <span class="drop">
-                <li class="drob">Location</li>
+                <li id="second">Location</li>
                 <ul class="dropdown">
                     <p><li>Lagos</li>
                    <p><li>Abuja</li></p>
                    <p><li>Ibadan</li></p>
                 </ul>
                 </span>
+                <li id="first">Property Type</li>
                 <span class="drop">
                 <li id="second">Packages</li>
                 <ul class="dropdown">
@@ -141,8 +147,7 @@
         <section id="contact" class="section">
             <h2 class="c">Contact</h2>
             <form action="" class="for">
-              <p><input type="text" placeholder="first name" class="init" id="name">
-               <input type="text" placeholder="last name" class="init" id="surname"> </p>
+              <p><input type="text" placeholder="enter your name" class="in" id="name"> </p>
               <p><input type="email" placeholder="enter your email" class="in" id="email"> </p> 
                <p><input type="text" placeholder="please give us your feedback" class="in" id="feedback"></p>
                 <button type="button" class="inn" onclick="getData()">Submit</button>
@@ -205,7 +210,6 @@
      <script> 
       function getData() {
         const name=document.getElementById("name").value.trim();
-        const surname=document.getElementById("surname").value.trim();
         const email=document.getElementById("email").value.trim();
         const feedback=document.getElementById("feedback").value.trim();
 
